@@ -1,3 +1,9 @@
+exports.signup = (req, res) =>{
+    console.log("REQ BODY", req.body);
+    res.json("signup route works!!")
+}
+
+
 exports.signout = (req, res) => {
   res.json({
     message: "User Signout Success!",
