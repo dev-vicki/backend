@@ -29,8 +29,9 @@ exports.signup = (req, res) =>{
 
 
 exports.signout = (req, res) => {
+    res.clearCookie("token");
   res.json({
-    message: "User Signout Success!",
+    message: "User Signout Successfully!"
   });
 };
 
