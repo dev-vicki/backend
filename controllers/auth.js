@@ -73,8 +73,8 @@ exports.signin = (req, res) => {
 
 // protected routes
 exports.isSignedIn = expressJwt({
-    secret: process.env.SECRET,
-    userProperty: "auth"
+  secret: process.env.SECRET,
+  userProperty: "auth"
 });
 
 
